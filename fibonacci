@@ -1,0 +1,12 @@
+def fibonacci_up_to_limit(limit):
+    fib_sequence = [0, 1]
+    while True:
+        next_value = fib_sequence[-1] + fib_sequence[-2]
+        if next_value > limit:
+            break
+        fib_sequence.append(next_value)
+    return fib_sequence
+
+# Example usage
+limit = 100  # Generate Fibonacci numbers up to this limit
+print(fibonacci_up_to_limit(limit))
